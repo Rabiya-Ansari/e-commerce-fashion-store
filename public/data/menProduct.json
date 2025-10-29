@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Classic White Shirt",
+    "price": 35,
+    "category": "Shirts",
+    "image": "/images/men/shirt1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Leather Watch",
+    "price": 80,
+    "category": "Watches",
+    "image": "/images/men/watch1.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Stylish Sneakers",
+    "price": 65,
+    "category": "Shoes",
+    "image": "/images/men/shoes1.jpg"
+  }
+]

@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "Classic Denim Jacket",
+    "price": 79,
+    "category": "men",
+    "size": "M",
+    "image": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=600",
+    "colors": ["#1E3A8A", "#F87171", "#FACC15"]
+  },
+  {
+    "id": 2,
+    "name": "Beige Trench Coat",
+    "price": 129,
+    "category": "women",
+    "size": "L",
+    "image": "https://images.unsplash.com/photo-1602810318383-e386cc2a3a30?q=80&w=600",
+    "colors": ["#D6D3D1", "#FCA5A5"]
+  },
+  {
+    "id": 3,
+    "name": "Leather Handbag",
+    "price": 99,
+    "category": "women",
+    "size": "M",
+    "image": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=600",
+    "colors": ["#78350F", "#B45309", "#92400E"]
+  },
+  {
+    "id": 4,
+    "name": "White Sneakers",
+    "price": 89,
+    "category": "men",
+    "size": "L",
+    "image": "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=600",
+    "colors": ["#FFFFFF", "#D1D5DB", "#9CA3AF"]
+  },
+  {
+    "id": 5,
+    "name": "Silk Summer Dress",
+    "price": 115,
+    "category": "women",
+    "size": "S",
+    "image": "https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=600",
+    "colors": ["#EC4899", "#FBBF24"]
+  },
+  {
+    "id": 6,
+    "name": "Casual Shirt",
+    "price": 59,
+    "category": "men",
+    "size": "M",
+    "image": "https://images.unsplash.com/photo-1534791547709-93d3af77df0f?q=80&w=600",
+    "colors": ["#3B82F6", "#10B981", "#F59E0B"]
+  },
+  {
+    "id": 7,
+    "name": "Kids Graphic Tee",
+    "price": 29,
+    "category": "kids",
+    "size": "S",
+    "image": "https://images.unsplash.com/photo-1593032465171-b6dfb5a8b05b?q=80&w=600",
+    "colors": ["#EF4444", "#3B82F6", "#22C55E"]
+  },
+  {
+    "id": 8,
+    "name": "Floral Maxi Dress",
+    "price": 139,
+    "category": "women",
+    "size": "M",
+    "image": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=600",
+    "colors": ["#F9A8D4", "#FDE68A", "#C084FC"]
+  },
+  {
+    "id": 9,
+    "name": "Slim Fit Jeans",
+    "price": 99,
+    "category": "men",
+    "size": "L",
+    "image": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=600",
+    "colors": ["#1E3A8A", "#2563EB", "#6B7280"]
+  },
+  {
+    "id": 10,
+    "name": "Summer Sandals",
+    "price": 45,
+    "category": "women",
+    "size": "M",
+    "image": "https://images.unsplash.com/photo-1600180758890-6cc5a41633a5?q=80&w=600",
+    "colors": ["#FCD34D", "#F87171"]
+  },
+  {
+    "id": 11,
+    "name": "Kids Denim Shorts",
+    "price": 39,
+    "category": "kids",
+    "size": "S",
+    "image": "https://images.unsplash.com/photo-1600180758890-6cc5a41633a5?q=80&w=600",
+    "colors": ["#1E3A8A", "#F9A8D4"]
+  },
+  {
+    "id": 12,
+    "name": "Wool Scarf",
+    "price": 55,
+    "category": "women",
+    "size": "One Size",
+    "image": "https://images.unsplash.com/photo-1520962918287-7448c2878f65?q=80&w=600",
+    "colors": ["#92400E", "#EAB308", "#F59E0B"]
+  },
+  {
+    "id": 13,
+    "name": "Formal Blazer",
+    "price": 149,
+    "category": "men",
+    "size": "L",
+    "image": "https://images.unsplash.com/photo-1521334884684-d80222895322?q=80&w=600",
+    "colors": ["#1F2937", "#9CA3AF"]
+  },
+  {
+    "id": 14,
+    "name": "Kids Winter Hoodie",
+    "price": 49,
+    "category": "kids",
+    "size": "M",
+    "image": "https://images.unsplash.com/photo-1520974735194-8a3149fd2b1d?q=80&w=600",
+    "colors": ["#3B82F6", "#F472B6"]
+  },
+  {
+    "id": 15,
+    "name": "Evening Gown",
+    "price": 199,
+    "category": "women",
+    "size": "L",
+    "image": "https://images.unsplash.com/photo-1602810318383-e386cc2a3a30?q=80&w=600",
+    "colors": ["#7C3AED", "#F9A8D4"]
+  }
+]

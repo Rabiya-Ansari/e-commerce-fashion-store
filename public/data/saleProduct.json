@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "name": "Men's Denim Jacket",
+        "category": "Men",
+        "originalPrice": 70,
+        "salePrice": 49.99,
+        "image": "/images/sale/men-jacket.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Women's Summer Dress",
+        "category": "Women",
+        "originalPrice": 65,
+        "salePrice": 44.99,
+        "image": "/images/sale/women-dress.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Kids Sneakers",
+        "category": "Kids",
+        "originalPrice": 40,
+        "salePrice": 29.99,
+        "image": "/images/sale/kids-shoes.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Unisex Sunglasses",
+        "category": "Men",
+        "originalPrice": 25,
+        "salePrice": 18.5,
+        "image": "/images/sale/sunglasses.jpg"
+    }
+]

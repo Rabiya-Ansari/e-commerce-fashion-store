@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Elegant Leather Handbag",
+    "price": 79.99,
+    "image": "/images/handbag1.jpg",
+    "category": "Hand Bag"
+  },
+  {
+    "id": 2,
+    "name": "Floral Printed Suit",
+    "price": 59.99,
+    "image": "/images/suit1.jpg",
+    "category": "Women Suit"
+  },
+  {
+    "id": 3,
+    "name": "Gold Necklace Set",
+    "price": 99.99,
+    "image": "/images/jewellery1.jpg",
+    "category": "Jewellery"
+  },
+  {
+    "id": 4,
+    "name": "Stylish High Heels",
+    "price": 49.99,
+    "image": "/images/shoes1.jpg",
+    "category": "Shoes"
+  },
+  {
+    "id": 5,
+    "name": "Comfortable Sandals",
+    "price": 39.99,
+    "image": "/images/sandal1.jpg",
+    "category": "Sandals"
+  }
+]

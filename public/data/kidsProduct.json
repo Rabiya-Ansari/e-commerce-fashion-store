@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Cute T-Shirt",
+        "category": "Clothes",
+        "price": 15.99,
+        "image": "/images/kids/tshirt.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Colorful Sneakers",
+        "category": "Shoes",
+        "price": 24.99,
+        "image": "/images/kids/sneakers.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Teddy Bear Toy",
+        "category": "Toys",
+        "price": 12.5,
+        "image": "/images/kids/teddy.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Kids Sunglasses",
+        "category": "Accessories",
+        "price": 10.99,
+        "image": "/images/kids/glasses.jpg"
+    }
+]
