@@ -11,8 +11,21 @@ import Women from "./pages/Women";
 import Men from "./pages/Men";
 import Kids from "./pages/Kids";
 import Sale from "./pages/Sale";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 
 function App() {
+ useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true, 
+      easing: "ease-in-out", 
+    });
+  }, []);
+
+
   const [cartItems, setCartItems] = useState([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [productsData, setProductsData] = useState([]);
@@ -47,7 +60,7 @@ function App() {
         .map((item) =>
           item.id === id ? { ...item, qty: item.qty + delta } : item
         )
-        .filter((item) => item.qty > 0) // remove if qty = 0
+        .filter((item) => item.qty > 0) 
     );
   };
 

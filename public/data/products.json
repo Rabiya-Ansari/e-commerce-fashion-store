@@ -5,7 +5,7 @@
     "price": 79,
     "category": "men",
     "size": "M",
-    "image": "./media/product1.jpg",
+    "image": "/media/product1.jpg",
     "colors": ["#1E3A8A", "#F87171", "#FACC15"]
   },
   {
@@ -14,7 +14,7 @@
     "price": 129,
     "category": "women",
     "size": "L",
-    "image": "./media/product2.jpg",
+    "image": "/media/product2.jpg",
     "colors": ["#D6D3D1", "#FCA5A5"]
   },
   {
@@ -23,7 +23,7 @@
     "price": 99,
     "category": "women",
     "size": "M",
-    "image": "./media/product3.jpg",
+    "image": "/media/product3.jpg",
     "colors": ["#78350F", "#B45309", "#92400E"]
   },
   {
@@ -32,7 +32,7 @@
     "price": 89,
     "category": "men",
     "size": "L",
-    "image": "./media/product4.jpg",
+    "image": "/media/product4.jpg",
     "colors": ["#FFFFFF", "#D1D5DB", "#9CA3AF"]
   },
   {
@@ -41,7 +41,7 @@
     "price": 115,
     "category": "women",
     "size": "S",
-    "image": "./media/product5.jpg",
+    "image": "/media/product5.jpg",
     "colors": ["#EC4899", "#FBBF24"]
   },
   {
@@ -50,7 +50,7 @@
     "price": 59,
     "category": "men",
     "size": "M",
-    "image": "./media/product6.jpg",
+    "image": "/media/product6.jpg",
     "colors": ["#3B82F6", "#10B981", "#F59E0B"]
   },
   {
@@ -59,7 +59,7 @@
     "price": 29,
     "category": "kids",
     "size": "S",
-    "image": "./media/product7.jpg",
+    "image": "/media/product7.jpg",
     "colors": ["#EF4444", "#3B82F6", "#22C55E"]
   },
   {
@@ -68,7 +68,7 @@
     "price": 139,
     "category": "women",
     "size": "M",
-    "image": "./media/product8.jpg",
+    "image": "/media/product8.jpg",
     "colors": ["#F9A8D4", "#FDE68A", "#C084FC"]
   },
   {
@@ -77,7 +77,7 @@
     "price": 99,
     "category": "men",
     "size": "L",
-    "image": "./media/product9.jpg",
+    "image": "/media/product9.jpg",
     "colors": ["#1E3A8A", "#2563EB", "#6B7280"]
   },
   {
@@ -86,7 +86,7 @@
     "price": 45,
     "category": "women",
     "size": "M",
-    "image": "./media/product10.jpg",
+    "image": "/media/product10.jpg",
     "colors": ["#FCD34D", "#F87171"]
   },
   {
@@ -95,7 +95,7 @@
     "price": 39,
     "category": "kids",
     "size": "S",
-    "image": "./media/product11.jpg",
+    "image": "/media/product11.jpg",
     "colors": ["#1E3A8A", "#F9A8D4"]
   },
   {
@@ -104,7 +104,7 @@
     "price": 55,
     "category": "women",
     "size": "One Size",
-    "image": "./media/product12.jpg",
+    "image": "/media/product12.jpg",
     "colors": ["#92400E", "#EAB308", "#F59E0B"]
   },
   {
@@ -113,7 +113,7 @@
     "price": 149,
     "category": "men",
     "size": "L",
-    "image": "./media/product13.jpg",
+    "image": "/media/product13.jpg",
     "colors": ["#1F2937", "#9CA3AF"]
   },
   {
@@ -122,7 +122,7 @@
     "price": 49,
     "category": "kids",
     "size": "M",
-    "image": "./media/product14.jpg",
+    "image": "/media/product14.jpg",
     "colors": ["#3B82F6", "#F472B6"]
   },
   {
@@ -131,7 +131,7 @@
     "price": 199,
     "category": "women",
     "size": "L",
-    "image": "./media/product15.jpg",
+    "image": "/media/product15.jpg",
     "colors": ["#7C3AED", "#F9A8D4"]
   },
   {
@@ -140,7 +140,7 @@
     "price": 199,
     "category": "women",
     "size": "L",
-    "image": "./media/product16.jpg",
+    "image": "/media/product16.jpg",
     "colors": ["#7C3AED", "#F9A8D4"]
   }
 ]

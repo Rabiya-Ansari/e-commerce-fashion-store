@@ -1,31 +1,33 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom"; 
+
 
 const slides = [
   {
     id: 1,
-    image:
-      "./media/hero1.png",
+    image: "./media/hero1.png",
     title: "New Season Arrivals",
     subtitle: "Discover the latest trends in fashion.",
     button: "Shop Now",
+    link: "/women",
   },
   {
     id: 2,
-    image:
-      "./media/hero2.png",
+    image: "./media/hero2.png",
     title: "Summer Collection 2025",
     subtitle: "Bright colors. Bold styles. Be you.",
     button: "Explore Collection",
+    link: "/men",
   },
   {
     id: 3,
-    image:
-      "./media/hero3.png",
+    image: "./media/hero3.png",
     title: "Exclusive Sale",
     subtitle: "Up to 50% off selected items.",
     button: "Shop the Sale",
+    link: "/sale",
   },
 ];
 
@@ -45,7 +47,7 @@ function HeroCarousel() {
 
   return (
     <div className="relative w-full h-screen overflow-hidden">
-     
+    
       <AnimatePresence>
         {slides.map(
           (slide, i) =>
@@ -63,10 +65,10 @@ function HeroCarousel() {
                   backgroundPosition: "center",
                 }}
               >
-             
+              
                 <div className="absolute inset-0 bg-black/50" />
 
-              
+               
                 <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
                   <motion.h2
                     initial={{ y: 30, opacity: 0 }}
@@ -84,14 +86,18 @@ function HeroCarousel() {
                   >
                     {slide.subtitle}
                   </motion.p>
-                  <motion.button
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                    transition={{ type: "spring", stiffness: 200 }}
-                    className="bg-[var(--color2)] hover:bg-[var(--yellow)] text-white font-semibold px-8 py-3 rounded-full shadow-lg transition-all"
-                  >
-                    {slide.button}
-                  </motion.button>
+
+                 
+                  <Link to={slide.link}>
+                    <motion.button
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.95 }}
+                      transition={{ type: "spring", stiffness: 200 }}
+                      className="bg-[var(--color2)] hover:bg-[var(--yellow)] text-white font-semibold px-8 py-3 rounded-full shadow-lg transition-all"
+                    >
+                      {slide.button}
+                    </motion.button>
+                  </Link>
                 </div>
               </motion.div>
             )
@@ -107,12 +113,12 @@ function HeroCarousel() {
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-6 top-1/2 -translate-y-1/2 bg-[var(--yellow)]  text-white p-3 rounded-full transition"
+        className="absolute right-6 top-1/2 -translate-y-1/2 bg-[var(--yellow)] text-white p-3 rounded-full transition"
       >
         <ChevronRight className="w-6 h-6" />
       </button>
 
-   
+    
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
         {slides.map((_, i) => (
           <motion.div

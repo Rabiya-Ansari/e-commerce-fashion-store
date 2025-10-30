@@ -8,7 +8,7 @@ function ProductCard({ product, onAddToCart }) {
   return (
     <motion.div
       whileHover={{ scale: 1.02 }}
-      className="relative bg-white rounded-2xl overflow-hidden shadow-lg group"
+      className="relative bg-white rounded-2xl overflow-hidden shadow-lg group" data-aos="fade-up"
     >
      
       <Link to={`/product/${product.id}`} className="block cursor-pointer">
@@ -17,7 +17,7 @@ function ProductCard({ product, onAddToCart }) {
           alt={product.name}
           className="w-full h-72 object-cover"
         />
-        <div className="p-4">
+        <div className="p-4" >
           <h3 className="text-lg font-semibold text-black">{product.name}</h3>
           <p className="text-gray-600 capitalize">{product.category}</p>
           <p className="text-black font-medium">${product.price}</p>

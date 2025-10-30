@@ -13,18 +13,18 @@ function Men({ onAddToCart }) {
   const [filtered, setFiltered] = useState([]);
   const [category, setCategory] = useState("All");
 
-  
+ 
   useEffect(() => {
-    fetch("/data/menProduct.json") 
+    fetch("/data/menProduct.json")
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
         setFiltered(data); 
       })
-      .catch((err) => console.error(" Failed to load men products:", err));
+      .catch((err) => console.error("Failed to load men products:", err));
   }, []);
 
- 
+
   const handleFilter = (cat) => {
     setCategory(cat);
     if (cat === "All") {
@@ -34,14 +34,14 @@ function Men({ onAddToCart }) {
     }
   };
 
- 
+
   const categories = [
     { label: "All", icon: Sparkles },
     { label: "Shirts", icon: Shirt },
     { label: "Watches", icon: Watch },
     { label: "Shoes", icon: Footprints },
-    { label: "Sunglasses", icon: Glasses },
-    { label: "Bags", icon: Briefcase },
+    { label: "Jackets", icon: Briefcase },
+    { label: "Accessories", icon: Glasses },
   ];
 
   return (
@@ -50,16 +50,16 @@ function Men({ onAddToCart }) {
         Men's Collection
       </h2>
 
-     
+
       <div className="flex flex-wrap justify-center gap-4 mb-10">
         {categories.map(({ label, icon: Icon }) => (
           <button
             key={label}
             onClick={() => handleFilter(label)}
-            className={`flex items-center gap-2 px-4 py-2 rounded-full border transition 
+            className={`flex items-center gap-2 px-4 py-2 rounded-full border transition-all duration-300
               ${
                 category === label
-                  ? "bg-[var(--yellow)] border-[var(--yellow)] text-black"
+                  ? "bg-[var(--yellow)] border-[var(--yellow)] text-black shadow-md"
                   : "border-[var(--color2)] hover:bg-[var(--yellow)] text-black"
               }`}
           >
@@ -69,12 +69,12 @@ function Men({ onAddToCart }) {
         ))}
       </div>
 
-      
+
       <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {filtered.map((item) => (
           <div
             key={item.id}
-            className="bg-white rounded-xl p-4 shadow-md hover:shadow-yellow-400/40 transition overflow-hidden"
+            className="bg-white rounded-2xl p-4 shadow-md hover:shadow-yellow-400/40 transition overflow-hidden" data-aos="fade-up"
           >
             <img
               src={item.image}

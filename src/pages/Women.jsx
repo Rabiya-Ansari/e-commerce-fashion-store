@@ -73,7 +73,7 @@ function Women({ onAddToCart }) {
         {filtered.map((item) => (
           <div
             key={item.id}
-            className="bg-white rounded-2xl p-4 shadow-md hover:shadow-yellow-400/40 transition overflow-hidden"
+            className="bg-white rounded-2xl p-4 shadow-md hover:shadow-yellow-400/40 transition overflow-hidden" data-aos="fade-up"
           >
             <img
               src={item.image}

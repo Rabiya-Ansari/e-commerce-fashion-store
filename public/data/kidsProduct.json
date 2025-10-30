@@ -22,7 +22,7 @@
   },
   {
     "id": 4,
-    "name": "kid Sunglasses",
+    "name": "Kid Sunglasses",
     "category": "Accessories",
     "price": 10.99,
     "image": "/media/kid4.jpg"
@@ -44,7 +44,7 @@
   {
     "id": 7,
     "name": "Adventure Backpack",
-    "category": "Accessories",
+    "category": "Bags",
     "price": 22.99,
     "image": "/media/kid7.jpg"
   },
@@ -82,5 +82,19 @@
     "category": "Clothes",
     "price": 31.5,
     "image": "/media/kid12.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Cute School Bag",
+    "category": "Bags",
+    "price": 19.99,
+    "image": "/media/kid13.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Cartoon Backpack",
+    "category": "Bags",
+    "price": 22.49,
+    "image": "/media/kid14.jpg"
   }
 ]

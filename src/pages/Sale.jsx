@@ -6,7 +6,7 @@ function Sale({ onAddToCart }) {
   const [filtered, setFiltered] = useState([]);
   const [category, setCategory] = useState("All");
 
- 
+
   useEffect(() => {
     fetch("./data/saleProduct.json")
       .then((res) => res.json())
@@ -14,7 +14,7 @@ function Sale({ onAddToCart }) {
         setProducts(data);
         setFiltered(data);
       })
-      .catch((err) => console.error("❌ Failed to load sale products:", err));
+      .catch((err) => console.error(" Failed to load sale products:", err));
   }, []);
 
 
@@ -37,17 +37,16 @@ function Sale({ onAddToCart }) {
         Sale & Offers 🎉
       </h2>
 
- 
+
       <div className="flex flex-wrap justify-center gap-4 mb-10">
         {categories.map(({ label, icon: Icon }) => (
           <button
             key={label}
             onClick={() => handleFilter(label)}
             className={`flex items-center gap-2 px-4 py-2 rounded-full border transition 
-              ${
-                category === label
-                  ? "bg-[var(--yellow)] border-[var(--yellow)] text-black"
-                  : "border-[var(--color2)] hover:bg-[var(--yellow)] text-black"
+              ${category === label
+                ? "bg-[var(--yellow)] border-[var(--yellow)] text-black"
+                : "border-[var(--color2)] hover:bg-[var(--yellow)] text-black"
               }`}
           >
             <Icon size={18} />
@@ -56,12 +55,12 @@ function Sale({ onAddToCart }) {
         ))}
       </div>
 
-  
+
       <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {filtered.map((item) => (
           <div
             key={item.id}
-            className="relative bg-white rounded-2xl p-4 shadow-md hover:shadow-yellow-400/40 transition overflow-hidden"
+            className="relative bg-white rounded-2xl p-4 shadow-md hover:shadow-yellow-400/40 transition overflow-hidden" data-aos="fade-up"
           >
 
             <div className="absolute top-3 left-3 bg-[var(--yellow)] text-black text-xs font-bold px-3 py-1 rounded-full shadow-lg">
