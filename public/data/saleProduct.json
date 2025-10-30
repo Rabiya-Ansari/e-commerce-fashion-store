@@ -5,7 +5,7 @@
         "category": "Men",
         "originalPrice": 70,
         "salePrice": 49.99,
-        "image": "/images/sale/men-jacket.jpg"
+        "image": "/media/sale1.jpg"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "category": "Women",
         "originalPrice": 65,
         "salePrice": 44.99,
-        "image": "/images/sale/women-dress.jpg"
+        "image": "/media/sale2.jpg"
     },
     {
         "id": 3,
@@ -21,14 +21,78 @@
         "category": "Kids",
         "originalPrice": 40,
         "salePrice": 29.99,
-        "image": "/images/sale/kids-shoes.jpg"
+        "image": "/media/sale3.jpg"
     },
     {
         "id": 4,
         "name": "Unisex Sunglasses",
-        "category": "Men",
+        "category": "Unisex",
         "originalPrice": 25,
         "salePrice": 18.5,
-        "image": "/images/sale/sunglasses.jpg"
+        "image": "/media/sale4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Women's Handbag",
+        "category": "Women",
+        "originalPrice": 80,
+        "salePrice": 59.99,
+        "image": "/media/sale5.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Men's Casual Shirt",
+        "category": "Men",
+        "originalPrice": 55,
+        "salePrice": 39.5,
+        "image": "/media/sale6.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Kids Printed Hoodie",
+        "category": "Kids",
+        "originalPrice": 50,
+        "salePrice": 34.99,
+        "image": "/media/sale7.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Women's Heels",
+        "category": "Women",
+        "originalPrice": 60,
+        "salePrice": 42.5,
+        "image": "/media/sale8.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Men's Sneakers",
+        "category": "Men",
+        "originalPrice": 75,
+        "salePrice": 54.99,
+        "image": "/media/sale9.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Kids Cartoon Watch",
+        "category": "Kids",
+        "originalPrice": 30,
+        "salePrice": 19.99,
+        "image": "/media/sale10.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Women's Scarf",
+        "category": "Women",
+        "originalPrice": 25,
+        "salePrice": 14.99,
+        "image": "/media/sale11.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Men's Leather Belt",
+        "category": "Men",
+        "originalPrice": 35,
+        "salePrice": 24.5,
+        "image": "/media/sale12.jpg"
     }
 ]

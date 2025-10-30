@@ -1,24 +1,23 @@
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import { Shirt, Watch, Footprints, Glasses, Sparkles, Briefcase, Baby } from "lucide-react";
+import { Shirt, Footprints, Glasses, Sparkles, Briefcase, Baby } from "lucide-react";
 
 function Kids({ onAddToCart }) {
   const [products, setProducts] = useState([]);
   const [filtered, setFiltered] = useState([]);
   const [category, setCategory] = useState("All");
 
-  // ✅ Load Kids Product Data
+ 
   useEffect(() => {
     fetch("/data/kidsProduct.json")
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
-        setFiltered(data); // show all products initially
+        setFiltered(data); 
       })
-      .catch((err) => console.error("❌ Failed to load kids products:", err));
+      .catch((err) => console.error(" Failed to load kids products:", err));
   }, []);
 
-  // ✅ Handle Category Filter
+
   const handleFilter = (cat) => {
     setCategory(cat);
     if (cat === "All") {
@@ -28,7 +27,7 @@ function Kids({ onAddToCart }) {
     }
   };
 
-  // ✅ Kids Categories
+ 
   const categories = [
     { label: "All", icon: Sparkles },
     { label: "Clothes", icon: Shirt },
@@ -40,11 +39,11 @@ function Kids({ onAddToCart }) {
 
   return (
     <div className="p-8">
-      <h2 className="text-3xl font-bold mb-8 text-center text-pink-400">
+      <h2 className="text-3xl font-bold mb-8 mt-8 text-center text-black">
         Kids Collection
       </h2>
 
-      {/* 🎨 Category Buttons */}
+      
       <div className="flex flex-wrap justify-center gap-4 mb-10">
         {categories.map(({ label, icon: Icon }) => (
           <button
@@ -53,8 +52,8 @@ function Kids({ onAddToCart }) {
             className={`flex items-center gap-2 px-4 py-2 rounded-full border transition 
               ${
                 category === label
-                  ? "bg-pink-600 border-pink-600"
-                  : "border-gray-600 hover:bg-pink-500/20"
+                  ? "bg-[var(--yellow)] border-[var(--yellow)] text-black"
+                  : "border-[var(--color2)] hover:bg-[var(--yellow)] text-black"
               }`}
           >
             <Icon size={18} />
@@ -63,39 +62,30 @@ function Kids({ onAddToCart }) {
         ))}
       </div>
 
-      {/* 🧸 Product Grid */}
-      <motion.div
-        layout
-        className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
-      >
-        {filtered.map((item, index) => (
-          <motion.div
+     
+      <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        {filtered.map((item) => (
+          <div
             key={item.id}
-            layout
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.05 }}
-            className="bg-gray-800 rounded-2xl p-4 shadow-md hover:shadow-pink-500/40 transition"
+            className="bg-white rounded-2xl p-4 shadow-md hover:shadow-yellow-400/40 transition overflow-hidden"
           >
             <img
               src={item.image}
               alt={item.name}
               className="w-full h-56 object-cover rounded-xl mb-3"
             />
-            <h3 className="text-lg font-semibold">{item.name}</h3>
-            <p className="text-pink-400">${item.price}</p>
+            <h3 className="text-lg font-semibold text-black">{item.name}</h3>
+            <p className="text-gray-600">${item.price}</p>
 
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+            <button
               onClick={() => onAddToCart(item)}
-              className="mt-3 w-full py-2 rounded-lg bg-pink-600 hover:bg-pink-700 transition"
+              className="mt-3 w-full py-2 rounded-lg bg-[var(--yellow)] hover:bg-[var(--color2)] transition text-white"
             >
               Add to Cart
-            </motion.button>
-          </motion.div>
+            </button>
+          </div>
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 }

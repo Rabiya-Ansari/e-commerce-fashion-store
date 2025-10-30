@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ShoppingCart, Search, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Header({ cartCount = 0, onSearch, onCartOpen }) {
   const [searchTerm, setSearchTerm] = useState("");
@@ -15,6 +15,7 @@ function Header({ cartCount = 0, onSearch, onCartOpen }) {
 
   const navLinks = [
     { name: "HOME", path: "/" },
+    { name: "ABOUT", path: "/about" },
     { name: "MEN", path: "/men" },
     { name: "WOMEN", path: "/women" },
     { name: "KIDS", path: "/kids" },
@@ -30,31 +31,37 @@ function Header({ cartCount = 0, onSearch, onCartOpen }) {
       className="fixed top-0 left-0 w-full bg-[var(--color1)] text-gray-800 shadow-md z-50"
     >
       <div className="flex items-center justify-between max-w-7xl mx-auto px-6 py-3">
-        {/* Left: Logo */}
+      
         <motion.h1
           whileHover={{ scale: 1.05 }}
           transition={{ type: "spring", stiffness: 250 }}
-          className="text-2xl font-extrabold tracking-wide cursor-pointer"
+          className="text-2xl font-extrabold tracking-wide cursor-pointer text-gray-800"
         >
-          Mini<span className="text-[var(--color2)]">Store</span>.
+          Fashion<span className="text-[var(--color2)]">Store</span>
         </motion.h1>
 
-        {/* Middle: Nav Links (Desktop) */}
+       
         <nav className="hidden md:flex items-center gap-8 text-sm font-semibold">
           {navLinks.map((item) => (
-            <Link
+            <NavLink
               key={item.name}
               to={item.path}
-              className="text-gray-500 hover:text-[var(--color2)] transition-colors duration-200"
+              className={({ isActive }) =>
+                `relative transition-colors duration-200 ${
+                  isActive
+                    ? "text-[var(--color2)] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-[var(--color2)]"
+                    : "text-gray-500 hover:text-[var(--color2)]"
+                }`
+              }
             >
               {item.name}
-            </Link>
+            </NavLink>
           ))}
         </nav>
 
-        {/* Right: Search + Icons */}
+        
         <div className="flex items-center gap-4">
-          {/* Search bar (desktop only) */}
+          
           <div className="relative hidden sm:flex items-center">
             <Search className="absolute left-2 w-4 h-4 text-gray-400" />
             <input
@@ -66,7 +73,7 @@ function Header({ cartCount = 0, onSearch, onCartOpen }) {
             />
           </div>
 
-          {/* Cart Icon */}
+          
           <motion.div
             whileTap={{ scale: 0.9 }}
             whileHover={{ scale: 1.05 }}
@@ -81,7 +88,7 @@ function Header({ cartCount = 0, onSearch, onCartOpen }) {
             )}
           </motion.div>
 
-          {/* Hamburger Menu (Mobile) */}
+          
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="md:hidden text-gray-700 hover:text-[var(--color2)] transition"
@@ -91,7 +98,7 @@ function Header({ cartCount = 0, onSearch, onCartOpen }) {
         </div>
       </div>
 
-      {/* Mobile Menu Panel */}
+     
       <AnimatePresence>
         {menuOpen && (
           <motion.div
@@ -103,23 +110,30 @@ function Header({ cartCount = 0, onSearch, onCartOpen }) {
           >
             <nav className="flex flex-col items-center gap-4 py-4">
               {navLinks.map((item) => (
-                <Link
+                <NavLink
                   key={item.name}
                   to={item.path}
                   onClick={() => setMenuOpen(false)}
-                  className="text-gray-600 hover:text-[var(--color2)] font-semibold transition"
+                  className={({ isActive }) =>
+                    `text-gray-700 font-semibold transition ${
+                      isActive
+                        ? "text-[var(--color2)] underline"
+                        : "hover:text-[var(--color2)]"
+                    }`
+                  }
                 >
                   {item.name}
-                </Link>
+                </NavLink>
               ))}
-              <div className="flex items-center gap-2 mt-3">
+              
+              <div className="flex items-center gap-2 mt-3 w-11/12">
                 <Search className="w-4 h-4 text-gray-400" />
                 <input
                   type="text"
                   placeholder="Search..."
                   value={searchTerm}
                   onChange={handleSearch}
-                  className="bg-white border border-gray-300 rounded-full px-3 py-1 text-sm focus:outline-none focus:ring-1 focus:ring-[var(--color2)]"
+                  className="bg-white border border-gray-300 rounded-full px-3 py-1 text-sm focus:outline-none focus:ring-1 focus:ring-[var(--color2)] w-full"
                 />
               </div>
             </nav>

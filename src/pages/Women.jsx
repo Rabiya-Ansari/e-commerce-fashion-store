@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
 import {
   ShoppingBag,
   Diamond,
@@ -14,18 +13,18 @@ function Women({ onAddToCart }) {
   const [filtered, setFiltered] = useState([]);
   const [category, setCategory] = useState("All");
 
-  // ✅ Load JSON Data Once
+
   useEffect(() => {
     fetch("/data/womenProduct.json")
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
-        setFiltered(data); // show all at start
+        setFiltered(data);
       })
-      .catch((err) => console.error("❌ Failed to load products:", err));
+      .catch((err) => console.error(" Failed to load products:", err));
   }, []);
 
-  // ✅ Handle Category Filter
+
   const handleFilter = (cat) => {
     setCategory(cat);
     if (cat === "All") {
@@ -46,11 +45,11 @@ function Women({ onAddToCart }) {
 
   return (
     <div className="p-8">
-      <h2 className="text-3xl font-bold mb-8 text-center">
+      <h2 className="text-3xl font-bold mb-8 mt-8 text-center text-black">
         Women's Collection
       </h2>
 
-      {/* 🩷 Filter Buttons */}
+   
       <div className="flex flex-wrap justify-center gap-4 mb-10">
         {categories.map(({ label, icon: Icon }) => (
           <button
@@ -59,8 +58,8 @@ function Women({ onAddToCart }) {
             className={`flex items-center gap-2 px-4 py-2 rounded-full border transition 
               ${
                 category === label
-                  ? "bg-pink-600 border-pink-600"
-                  : "border-gray-600 hover:bg-pink-500/20"
+                  ? "bg-[var(--yellow)] border-[var(--yellow)] text-black"
+                  : "border-[var(--color2)] hover:bg-[var(--yellow)] text-black"
               }`}
           >
             <Icon size={18} />
@@ -69,40 +68,30 @@ function Women({ onAddToCart }) {
         ))}
       </div>
 
-      {/* 🛍️ Product Grid */}
-      <motion.div
-        layout
-        className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
-      >
-        {filtered.map((item, index) => (
-          <motion.div
+     
+      <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        {filtered.map((item) => (
+          <div
             key={item.id}
-            layout
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.05 }}
-            className="bg-gray-800 rounded-2xl p-4 shadow-md hover:shadow-pink-600/40 transition"
+            className="bg-white rounded-2xl p-4 shadow-md hover:shadow-yellow-400/40 transition overflow-hidden"
           >
             <img
               src={item.image}
               alt={item.name}
               className="w-full h-56 object-cover rounded-xl mb-3"
             />
-            <h3 className="text-lg font-semibold">{item.name}</h3>
-            <p className="text-pink-400">${item.price}</p>
+            <h3 className="text-lg font-semibold text-black">{item.name}</h3>
+            <p className="text-gray-600">${item.price}</p>
 
-            {/* ✅ Corrected Add to Cart Button */}
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={() => onAddToCart(item)} // ✅ fixed (was product)
-              className="mt-3 w-full py-2 rounded-lg bg-pink-600 hover:bg-pink-700 transition"
+            <button
+              onClick={() => onAddToCart(item)}
+              className="mt-3 w-full py-2 rounded-lg bg-[var(--yellow)] hover:bg-[var(--color2)] transition text-white"
             >
               Add to Cart
-            </motion.button>
-          </motion.div>
+            </button>
+          </div>
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 }

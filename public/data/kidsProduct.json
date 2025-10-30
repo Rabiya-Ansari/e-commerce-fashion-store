@@ -1,30 +1,86 @@
 [
-    {
-        "id": 1,
-        "name": "Cute T-Shirt",
-        "category": "Clothes",
-        "price": 15.99,
-        "image": "/images/kids/tshirt.jpg"
-    },
-    {
-        "id": 2,
-        "name": "Colorful Sneakers",
-        "category": "Shoes",
-        "price": 24.99,
-        "image": "/images/kids/sneakers.jpg"
-    },
-    {
-        "id": 3,
-        "name": "Teddy Bear Toy",
-        "category": "Toys",
-        "price": 12.5,
-        "image": "/images/kids/teddy.jpg"
-    },
-    {
-        "id": 4,
-        "name": "Kids Sunglasses",
-        "category": "Accessories",
-        "price": 10.99,
-        "image": "/images/kids/glasses.jpg"
-    }
+  {
+    "id": 1,
+    "name": "Cute T-Shirt",
+    "category": "Clothes",
+    "price": 15.99,
+    "image": "/media/kid1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Colorful Sneakers",
+    "category": "Shoes",
+    "price": 24.99,
+    "image": "/media/kid2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Teddy Bear Toy",
+    "category": "Toys",
+    "price": 12.5,
+    "image": "/media/kid3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "kid Sunglasses",
+    "category": "Accessories",
+    "price": 10.99,
+    "image": "/media/kid4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Denim Shorts",
+    "category": "Clothes",
+    "price": 18.99,
+    "image": "/media/kid5.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Soft Plush Bunny",
+    "category": "Toys",
+    "price": 14.5,
+    "image": "/media/kid6.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Adventure Backpack",
+    "category": "Accessories",
+    "price": 22.99,
+    "image": "/media/kid7.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Printed Hoodie",
+    "category": "Clothes",
+    "price": 27.99,
+    "image": "/media/kid8.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Building Block Set",
+    "category": "Toys",
+    "price": 19.99,
+    "image": "/media/kid9.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Light-Up Sneakers",
+    "category": "Shoes",
+    "price": 29.99,
+    "image": "/media/kid10.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Cartoon Cap",
+    "category": "Accessories",
+    "price": 9.99,
+    "image": "/media/kid11.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Raincoat Set",
+    "category": "Clothes",
+    "price": 31.5,
+    "image": "/media/kid12.jpg"
+  }
 ]

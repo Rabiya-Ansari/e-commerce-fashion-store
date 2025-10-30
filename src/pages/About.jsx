@@ -1,14 +1,22 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { HexagonBackground } from "../components/HexagonBackground";
 
 const About = () => {
   return (
     <div className="relative overflow-hidden bg-white text-gray-800">
-      {/* === HERO SECTION === */}
-      <section className="relative h-[70vh] flex items-center justify-center text-center">
-        <HexagonBackground className="absolute inset-0 opacity-60" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-transparent"></div>
+      {/* === HERO SECTION WITH IMAGE === */}
+      <section className="relative h-[70vh] flex items-center justify-center text-center overflow-hidden">
+        {/* Banner Background Image */}
+        <img
+          src="/media/about-banner.jpg" // 👉 Replace this with your banner image
+          alt="About Banner"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+
+        {/* Overlay Gradient */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60"></div>
+
+        {/* Hero Text */}
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -30,7 +38,7 @@ const About = () => {
         >
           <div className="absolute top-6 left-6 w-full h-full border-4 border-[var(--color1)] rounded-xl"></div>
           <img
-            src="/media/about-bg.png"
+            src="/media/about.png"
             alt="About"
             className="relative rounded-xl shadow-xl object-cover w-full h-[420px]"
           />
@@ -43,13 +51,13 @@ const About = () => {
           transition={{ duration: 0.8 }}
           className="w-full md:w-1/2 space-y-6"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-[var(--color1)]">
+          <h2 className="text-3xl md:text-4xl font-bold text-[var(--color2)]">
             Who We Are
           </h2>
           <p className="text-gray-600 leading-relaxed">
             We believe in crafting experiences that combine creativity,
             functionality, and elegance. Our mission is to bring beauty into
-            everyday living — whether through style, design, or innovation. 
+            everyday living — whether through style, design, or innovation.
           </p>
           <p className="text-gray-600 leading-relaxed">
             Every detail tells a story, and we take pride in creating something
@@ -65,7 +73,7 @@ const About = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-3xl md:text-4xl font-bold text-gray-800 mb-6"
+          className="text-3xl md:text-4xl font-bold text-[var(--color2)] mb-6"
         >
           Our Story
         </motion.h2>
@@ -78,9 +86,10 @@ const About = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
           consequat consequat enim, non auctor massa ultrices non. Quisque at
           vehicula tellus. Pellentesque habitant morbi tristique senectus et
-          netus et malesuada fames ac turpis egestas. 
-          <br /><br />
-          Donec gravida lorem elit, quis condimentum ex semper sit amet. 
+          netus et malesuada fames ac turpis egestas.
+          <br />
+          <br />
+          Donec gravida lorem elit, quis condimentum ex semper sit amet.
           Aliquam imperdiet sodales. Ut fringilla turpis in vehicula
           vehicula. Etiam sed tincidunt erat, ac pretium dui. In vel lorem vel
           lorem pulvinar vehicula in id nulla.

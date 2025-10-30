@@ -3,35 +3,84 @@
     "id": 1,
     "name": "Elegant Leather Handbag",
     "price": 79.99,
-    "image": "/images/handbag1.jpg",
+    "image": "/media/w1.jpg",
     "category": "Hand Bag"
   },
   {
     "id": 2,
     "name": "Floral Printed Suit",
     "price": 59.99,
-    "image": "/images/suit1.jpg",
+    "image": "/media/w2.jpg",
     "category": "Women Suit"
   },
   {
     "id": 3,
     "name": "Gold Necklace Set",
     "price": 99.99,
-    "image": "/images/jewellery1.jpg",
+    "image": "/media/w3.jpg",
     "category": "Jewellery"
   },
   {
     "id": 4,
     "name": "Stylish High Heels",
     "price": 49.99,
-    "image": "/images/shoes1.jpg",
+    "image": "/media/w4.jpg",
     "category": "Shoes"
   },
   {
     "id": 5,
     "name": "Comfortable Sandals",
     "price": 39.99,
-    "image": "/images/sandal1.jpg",
+    "image": "/media/w5.jpg",
     "category": "Sandals"
+  },
+  {
+    "id": 6,
+    "name": "Designer Tote Bag",
+    "price": 89.99,
+    "image": "/media/w6.jpg",
+    "category": "Hand Bag"
+  },
+  {
+    "id": 7,
+    "name": "Silk Embroidered Suit",
+    "price": 69.99,
+    "image": "/media/w7.jpg",
+    "category": "Women Suit"
+  },
+  {
+    "id": 8,
+    "name": "Pearl Earrings Set",
+    "price": 44.99,
+    "image": "/media/w8.jpg",
+    "category": "Jewellery"
+  },
+  {
+    "id": 9,
+    "name": "Casual Flat Sandals",
+    "price": 34.99,
+    "image": "/media/w9.jpg",
+    "category": "Sandals"
+  },
+  {
+    "id": 10,
+    "name": "Wedge Heeled Shoes",
+    "price": 54.99,
+    "image": "/media/w10.jpg",
+    "category": "Shoes"
+  },
+  {
+    "id": 11,
+    "name": "Mini Crossbody Bag",
+    "price": 64.99,
+    "image": "/media/w11.jpg",
+    "category": "Hand Bag"
+  },
+  {
+    "id": 12,
+    "name": "Diamond Pendant Necklace",
+    "price": 119.99,
+    "image": "/media/w12.jpg",
+    "category": "Jewellery"
   }
 ]

@@ -17,15 +17,15 @@ function App() {
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [productsData, setProductsData] = useState([]);
 
-  // 🧠 Load products from public folder
+
   useEffect(() => {
     fetch("/data/products.json")
       .then((res) => res.json())
       .then((data) => setProductsData(data))
-      .catch((err) => console.error("❌ Failed to load products:", err));
+      .catch((err) => console.error(" Failed to load products:", err));
   }, []);
 
-  // 🛒 Add to cart
+
   const handleAddToCart = (product) => {
     setCartItems((prev) => {
       const existing = prev.find((item) => item.id === product.id);
@@ -37,10 +37,10 @@ function App() {
         return [...prev, { ...product, qty: 1 }];
       }
     });
-    setIsCartOpen(true); // 👈 auto open cart
+    setIsCartOpen(true); 
   };
 
-  // 🔄 Change quantity (called from + / –)
+ 
   const handleQtyChange = (id, delta) => {
     setCartItems((prev) =>
       prev
@@ -51,12 +51,12 @@ function App() {
     );
   };
 
-  // ❌ Remove item manually
+
   const handleRemoveItem = (id) => {
     setCartItems((prev) => prev.filter((item) => item.id !== id));
   };
 
-  // ✅ Checkout clears cart
+
   const handleCheckoutComplete = () => {
     setCartItems([]);
     alert("🎉 Checkout complete! Thank you for shopping.");
@@ -93,7 +93,7 @@ function App() {
 
         <Footer />
 
-        {/* 🛍️ Cart Sidebar */}
+      
         <CartSidebar
           isOpen={isCartOpen}
           onClose={() => setIsCartOpen(false)}

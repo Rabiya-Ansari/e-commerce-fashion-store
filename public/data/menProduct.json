@@ -4,20 +4,83 @@
     "name": "Classic White Shirt",
     "price": 35,
     "category": "Shirts",
-    "image": "/images/men/shirt1.jpg"
+    "image": "/media/men1.jpg"
   },
   {
     "id": 2,
     "name": "Leather Watch",
     "price": 80,
     "category": "Watches",
-    "image": "/images/men/watch1.jpg"
+    "image": "/media/men2.jpg"
   },
   {
     "id": 3,
     "name": "Stylish Sneakers",
     "price": 65,
     "category": "Shoes",
-    "image": "/images/men/shoes1.jpg"
+    "image": "/media/men3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Denim Blue Shirt",
+    "price": 40,
+    "category": "Shirts",
+    "image": "/media/men4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Smart Analog Watch",
+    "price": 95,
+    "category": "Watches",
+    "image": "/media/men5.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Casual Running Shoes",
+    "price": 72,
+    "category": "Shoes",
+    "image": "/media/men6.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Black Leather Jacket",
+    "price": 120,
+    "category": "Jackets",
+    "image": "/media/men7.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Brown Bomber Jacket",
+    "price": 130,
+    "category": "Jackets",
+    "image": "/media/men8.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Silver Chain Bracelet",
+    "price": 45,
+    "category": "Accessories",
+    "image": "/media/men9.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Aviator Sunglasses",
+    "price": 55,
+    "category": "Accessories",
+    "image": "/media/men10.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Formal Oxford Shoes",
+    "price": 90,
+    "category": "Shoes",
+    "image": "/media/men11.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Graphic Tee",
+    "price": 28,
+    "category": "Shirts",
+    "image": "/media/men12.jpg"
   }
 ]

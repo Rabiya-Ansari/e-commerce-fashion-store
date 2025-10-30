@@ -8,7 +8,7 @@ function CartSidebar({
   cartItems,
   onQtyChange,
   onRemove,
-  onCheckoutComplete, // ✅ new prop
+  onCheckoutComplete, 
 }) {
   const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
   const subtotal = cartItems.reduce((sum, item) => sum + item.price * item.qty, 0);
@@ -17,7 +17,7 @@ function CartSidebar({
     <AnimatePresence>
       {isOpen && (
         <>
-          {/* Overlay */}
+          
           <motion.div
             className="fixed inset-0 bg-black/50 z-40"
             initial={{ opacity: 0 }}
@@ -26,7 +26,7 @@ function CartSidebar({
             onClick={onClose}
           />
 
-          {/* Cart Sidebar */}
+         
           <motion.div
             className="fixed top-0 right-0 h-full w-full sm:w-96 bg-zinc-900 text-white z-50 shadow-2xl flex flex-col"
             initial={{ x: "100%" }}
@@ -34,10 +34,10 @@ function CartSidebar({
             exit={{ x: "100%" }}
             transition={{ type: "spring", stiffness: 120, damping: 18 }}
           >
-            {/* Header */}
+           
             <div className="flex justify-between items-center p-5 border-b border-zinc-700">
               <h2 className="text-xl font-bold flex items-center gap-2">
-                <ShoppingBag className="w-5 h-5 text-pink-400" />
+                <ShoppingBag className="w-5 h-5 text-[var(--yellow)]" />
                 Your Cart
               </h2>
               <button onClick={onClose}>
@@ -45,7 +45,6 @@ function CartSidebar({
               </button>
             </div>
 
-            {/* Items */}
             <div className="flex-1 overflow-y-auto p-4 space-y-4">
               {cartItems.length > 0 ? (
                 cartItems.map((item) => (
@@ -85,7 +84,7 @@ function CartSidebar({
 
                     <button
                       onClick={() => onRemove(item.id)}
-                      className="text-red-500 hover:text-red-400 transition"
+                      className="text-[var(--yellow)] hover:text-[var(--color2)] transition"
                     >
                       <Trash2 className="w-5 h-5" />
                     </button>
@@ -98,7 +97,7 @@ function CartSidebar({
               )}
             </div>
 
-            {/* Footer */}
+           
             {cartItems.length > 0 && (
               <div className="border-t border-zinc-700 p-5">
                 <div className="flex justify-between items-center mb-3">
@@ -110,7 +109,7 @@ function CartSidebar({
                 <motion.button
                   whileTap={{ scale: 0.95 }}
                   onClick={() => setIsCheckoutOpen(true)}
-                  className="w-full bg-pink-500 hover:bg-pink-600 py-3 rounded-xl font-semibold transition"
+                  className="w-full bg-[var(--yellow)] hover:bg-[var(--color2)] py-3 rounded-xl font-semibold transition"
                 >
                   Proceed to Checkout
                 </motion.button>
@@ -118,7 +117,7 @@ function CartSidebar({
             )}
           </motion.div>
 
-          {/* Checkout Modal */}
+          
           <AnimatePresence>
             {isCheckoutOpen && (
               <>
@@ -155,9 +154,9 @@ function CartSidebar({
                     onClick={() => {
                       setIsCheckoutOpen(false);
                       onClose();
-                      onCheckoutComplete(); // ✅ Clear cart in parent
+                      onCheckoutComplete(); 
                     }}
-                    className="w-full bg-blue-600 hover:bg-blue-700 py-3 rounded-lg font-semibold"
+                    className="w-full bg-[var(--yellow)] hover:bg-[var(--color2)] py-3 rounded-lg font-semibold"
                   >
                     Confirm Purchase
                   </motion.button>
