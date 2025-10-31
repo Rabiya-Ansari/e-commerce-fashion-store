@@ -104,7 +104,7 @@ function Header({ cartCount = 0, onSearch, onCartOpen }) {
         
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden text-gray-200 hover:text-[var(--color2)] transition"
+            className="md:hidden text-gray-800 hover:text-[var(--color2)] transition"
           >
             {menuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -130,7 +130,7 @@ function Header({ cartCount = 0, onSearch, onCartOpen }) {
                     `font-semibold uppercase tracking-wide transition-all duration-200 ${
                       isActive
                         ? "text-[var(--color2)]"
-                        : "text-gray-300 hover:text-[var(--yellow)]"
+                        : "text-gray-500 hover:text-[var(--yellow)]"
                     }`
                   }
                 >

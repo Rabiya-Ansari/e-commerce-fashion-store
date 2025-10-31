@@ -7,7 +7,7 @@ export default function ProductDetail({ onAddToCart }) {
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    fetch("/data/products.json") // ✅ Corrected Path
+    fetch("/data/products.json") 
       .then((res) => res.json())
       .then((data) => {
         const found = data.find((p) => p.id === parseInt(id));
